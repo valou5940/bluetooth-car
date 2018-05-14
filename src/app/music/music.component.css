@@ -1,0 +1,19 @@
+.fas {
+    font-size: 300%;
+    /* margin-bottom: 120px; */
+    margin-right: 20px;
+}
+
+.player {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.volume-slider {
+    margin-bottom: 50px;
+}
+
+.length-slider {
+    margin-bottom: 50px;
+}

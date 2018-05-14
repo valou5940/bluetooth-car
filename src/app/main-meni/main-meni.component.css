@@ -1,0 +1,12 @@
+.fas {
+    font-size: 1000%;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.main {
+    height: 300px;
+    background-color: rgb(53, 163, 38);
+}
