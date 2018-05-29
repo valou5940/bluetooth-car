@@ -1,0 +1,21 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="player col-md-4 offset-md-5">
+        <div>
+          <i class="fas fa-backward"> </i>
+          <i [class]="playPauseButton" (click)="playMusic()"> </i>
+          <i class="fas fa-forward"> </i>
+        </div>
+        <mat-slider class="length-slider"></mat-slider>
+        <mat-slider vertical class="volume-slider"></mat-slider>
+      </div>
+  </div> -->
+<div [ngStyle]="backgroundStyle">
+  <search (query)="handleQuery($event)" (update)="handleUpdate($event)" [tracks]="filteredTracks" ></search>
+
+  <music-details [title]="title" ></music-details>
+
+  <music-player (random)="handleRandom($event)" (backward)="handleBackward()" (forward)="handleForward()" (pauseplay)="handlePausePlay()" (stop)="handleStop()" [paused]="paused" ></music-player>
+
+  <music-progress [current]="position" [elapsed]="elapsed" [total]="duration" ></music-progress>
+</div>
